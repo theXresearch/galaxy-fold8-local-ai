@@ -1,0 +1,31 @@
+# Default deny: only reviewed project files may be staged automatically.
+# Review new files for sensitive content before adding an exception here.
+/*
+!/.gitignore
+!/README.md
+!/REMOTE-CONNECTION-PLAN.md
+!/package.json
+!/server.js
+!/server.test.js
+!/mcp.js
+!/mcp.test.js
+!/safe-files.js
+!/file-policy.js
+!/security.test.js
+!/access-control.js
+!/http-security.test.js
+
+# Defense in depth for credentials, local state, dependencies and backups.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.log
+*.bak
+*.bak.*
+node_modules/
+credentials*
+secrets*
